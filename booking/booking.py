@@ -19,8 +19,4 @@ class Booking(webdriver.Chrome):
     def land_first_page(self):
         self.get(const.BASE_URL)
 
-    def change_currency(self, currency=None):
-        currency_element = self.find_element(By.CSS_SELECTOR,
-                                             'button[data-testid="header-mobile-menu-currency-picker-menu-item"]'
-        )
-        currency_element.click()
+
